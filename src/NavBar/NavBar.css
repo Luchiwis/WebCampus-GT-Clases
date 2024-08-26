@@ -1,0 +1,20 @@
+nav{
+    display: flex;
+    text-align: center;
+}
+
+.NavLink{
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.Nav.active{
+    text-decoration: underline;
+}

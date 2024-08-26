@@ -1,25 +1,29 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { PaginaPrincipal } from "./PaginaPrincipal"
-import { About } from "./About"
-import { Calendario } from "./Calendario"
-import { Trabajo } from "./Trabajo"
-import { Error404 } from "./Error404"
-
+import { PaginaPrincipal } from "./sections/PaginaPrincipal"
+import { About } from "./sections/About"
+import { Calendario } from "./sections/Calendario"
+import { Trabajo } from "./sections/Trabajo"
+import { Error404 } from "./sections/Error404"
+import { NavBar } from "./NavBar/NavBar"
+import { Event } from "./sections/Event"
 import "./style.css"
+import "./fonts.css"
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
-        <p>Este contenido lo tienen todas las paginas</p>
+        <NavBar />
         <Routes>
           <Route path="/" element={<PaginaPrincipal />}></Route>
           <Route path="/about/" element={<About />}></Route>
           <Route path="/calendario/" element={<Calendario />}></Route>
           <Route path="/trabajo/:numero" element={<Trabajo />}></Route>
-          <Route path="*" element={<Error404 />}></Route>
+          <Route path="/event/:id" element={<Event />}></Route>
 
+
+          <Route path="*" element={<Error404 />}></Route>
         </Routes>
       </BrowserRouter>
     </>
