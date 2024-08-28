@@ -4,7 +4,7 @@ import { About } from "./sections/About/About"
 import { Calendario } from "./sections/Calendario"
 import { Trabajo } from "./sections/Trabajo"
 import { Error404 } from "./sections/Error404/Error404"
-import { NavBar } from "./components/NavBar/NavBar"
+import { NavBar } from "./components/NavBar/NavBar.jsx"
 import { Event } from "./sections/Event"
 import "./style.css"
 import "./fonts.css"
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar />
+        <NavBar/>
         <Routes>
           <Route path="/" element={<PaginaPrincipal />}></Route>
           <Route path="/about/" element={<About />}></Route>

@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./NavBar.css"
 
-export function NavScrollExample() {
+export function NavBar() {
     return (
         <>
             <Navbar expand="lg" className="bg-body-tertiary">
@@ -48,7 +48,6 @@ export function NavScrollExample() {
                 </Container>
             </Navbar>
         </>
-
     );
 }
 
