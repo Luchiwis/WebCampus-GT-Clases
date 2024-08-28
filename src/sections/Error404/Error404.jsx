@@ -8,7 +8,7 @@ export function Error404() {
             <h1 className="error404">ERROR 404</h1>
             <h2 className="error404">PAGE NOT FOUND</h2>
             <p>La pagina {params["*"]} No existe</p>
-            <Link className="tagA" to="/">Volver a la pagina principal</Link>
+            <button className="tagA"><Link className="tagA" to="/">Volver</Link></button>
         </>
     )
 }

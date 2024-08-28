@@ -1,6 +1,15 @@
 nav{
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar-cs{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .NavLink{

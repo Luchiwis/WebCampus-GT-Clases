@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+.error404{
+    font-family: "New Amsterdam", sans-serif;
+    color: red;
+    font-size: 15px;
+    
+}
+
+.tagA{
+    text-decoration: none;
+    color: blue;
+}
+
+.tagA:hover{
+    color: black;
+}
+
+.tagA:active{
+    color: white;
+}
