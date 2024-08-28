@@ -10,12 +10,17 @@
 .tagA{
     text-decoration: none;
     color: blue;
+    padding: 3px;
 }
 
 .tagA:hover{
     color: black;
+    transition-duration: 0.2s;
+    
 }
 
 .tagA:active{
     color: white;
+    transition-duration: 0.2s;
+    padding: -3px;
 }

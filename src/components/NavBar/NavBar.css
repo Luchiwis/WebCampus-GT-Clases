@@ -1,28 +1,23 @@
-nav{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
 
-.Navbar-cs{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
 
-.NavLink{
-    width: 100%;
-    margin-right: 5%;
-    margin-left: 5%;
-    border: 3px solid rgb(78, 165, 236);
+.navbar{
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: rgba(17, 9, 1, 0.973);
-    padding: 3px;
-    border-radius: 15px;
+    
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
 }
 
-.Nav.active{
-    text-decoration: underline;
+.navbar li{
+    float: left;
+    list-style: none;
 }
+
+.navbar a{
+    
+}
+
