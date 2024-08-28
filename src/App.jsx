@@ -6,6 +6,7 @@ import { Trabajo } from "./sections/Trabajo"
 import { Error404 } from "./sections/Error404/Error404"
 import { NavBar } from "./components/NavBar/NavBar"
 import { Event } from "./sections/Event"
+import {NextUIProvider} from "@nextui-org/react";
 import "./style.css"
 import "./fonts.css"
 
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    <NextUIProvider>
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -26,6 +28,7 @@ function App() {
           <Route path="*" element={<Error404 />}></Route>
         </Routes>
       </BrowserRouter>
+      </NextUIProvider>
     </>
   )
 }

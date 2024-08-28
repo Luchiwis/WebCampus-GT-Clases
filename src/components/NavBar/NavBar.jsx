@@ -2,7 +2,7 @@ import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
 import {Logo} from "./Logo.jsx";
 
-export default function NavBar() {
+export function NavBar() {
   return (
     <Navbar>
       <NavbarBrand>
