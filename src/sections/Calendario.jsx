@@ -1,5 +1,5 @@
 // import { useLocation } from "react-router-dom"
-import { Calendar } from "../components/Calendar"
+import { Calendar } from "../components/Calendar/Calendar"
 
 function Calendario() {
     // const { search } = useLocation()

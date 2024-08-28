@@ -1,0 +1,11 @@
+:root {
+    ---colorFondo: rgb(70, 70, 77);
+}
+
+.section {
+    background-color: var(---colorFondo);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

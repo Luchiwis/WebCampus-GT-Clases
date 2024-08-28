@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
-import ".Error404.css"
+import "./Error404.css"
 export function Error404() {
     const params = useParams()
     return (
