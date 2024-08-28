@@ -4,7 +4,6 @@
 
 .section {
     background-color: var(---colorFondo);
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
