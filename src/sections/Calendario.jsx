@@ -7,7 +7,7 @@ function Calendario() {
 
     return (
         <>
-            <h1>Este es mi calendario</h1>
+            <h1>Este es mi calendario lindo</h1>
             <div className="centrar">
                 <Calendar />
 
