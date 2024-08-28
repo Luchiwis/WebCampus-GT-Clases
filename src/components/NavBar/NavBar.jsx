@@ -48,7 +48,6 @@ export function NavBar() {
                 </Container>
             </Navbar>
         </>
-
     );
 }
 
