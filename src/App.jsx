@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<PaginaPrincipal />}></Route>
           <Route path="/about/" element={<About />}></Route>
           <Route path="/calendario/" element={<Calendario />}></Route>
-          <Route path="/trabajo/:numero" element={<Trabajo />}></Route>
+          <Route path="/trabajo/" element={<Trabajo />}></Route>
           <Route path="/event/:id" element={<Event />}></Route>
 
 
