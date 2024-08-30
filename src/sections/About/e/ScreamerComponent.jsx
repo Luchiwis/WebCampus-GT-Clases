@@ -1,21 +1,20 @@
 import React, { useEffect } from 'react';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
-import screamerVideo from './assets/screamer.mp4'; // Asegúrate de que la ruta sea correcta
-import lucioImage from './assets/lucio.jpeg'; // Importa la imagen
-import './button.css'; // Importa tu archivo CSS
+import screamerVideo from './assets/screamer.mp4'; 
+import lucioImage from './assets/lucio.jpeg'; 
+import './button.css'; 
 
 const ScreamerComponent = () => {
   useEffect(() => {
-    // Seleccionamos el elemento con la clase 'screamer-target'
+
     const element = document.querySelector('.screamer-target');
 
     if (element) {
-      // Añadimos un evento de click al elemento
+
       element.addEventListener('click', handleClick);
     }
 
-    // Limpiar el evento cuando el componente se desmonte
     return () => {
       if (element) {
         element.removeEventListener('click', handleClick);
@@ -24,7 +23,7 @@ const ScreamerComponent = () => {
   }, []);
 
   const handleClick = () => {
-    // Mostrar una alerta antes del screamer con una imagen centrada
+
     Swal.fire({
       title: '¡No hay ningún screamer! :)',
       text: 'Confía en mí, no hay nada.',
@@ -36,10 +35,10 @@ const ScreamerComponent = () => {
       icon: 'warning',
       confirmButtonText: 'Cerrar',
       customClass: {
-        popup: 'my-popup-class', // Clase personalizada para el contenedor
+        popup: 'my-popup-class',
       },
     }).then(() => {
-      // Mostrar el screamer con el video local
+   
       Swal.fire({
         title: '¡Screamer!',
         html: `<video src="${screamerVideo}" autoplay style="width: 100%;"></video>`,
